@@ -373,6 +373,7 @@ li {
   font-size: 65px;
   padding: 30px 0;
   color: rgba(51, 51, 51, 0.63);
+  text-align: center;
 }
 
 .service-boxes {
@@ -424,7 +425,7 @@ li {
 .read-about-services {
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 210px;
+  padding-bottom: 150px;
   position: relative;
 }
 
@@ -608,9 +609,8 @@ p.featured-paragraph {
 .feedbacks {
   background: white;
   text-align: center;
-  padding-top: 100px;
   position: relative;
-  padding-bottom: 100px;
+  padding: 20px 0;
 }
 
 .feedbacks::after {
@@ -622,7 +622,7 @@ p.featured-paragraph {
   left: 0;
   background: white;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
-  border-top: 1px solid white;
+  border-top: 3px solid white;
 }
 
 .feedback_titles > p {
@@ -684,7 +684,7 @@ p.featured-paragraph {
 
 .index-blog {
   background: #f5f5f5;
-  padding-top: 300px;
+  padding-top: 200px;
   text-align: center;
 }
 
@@ -1244,6 +1244,10 @@ p.featured-paragraph {
     text-align: center;
   }
 
+  .navigation {
+    font-size: 20px;
+  }
+
   .hero-img {
     display: none;
   }
@@ -1260,7 +1264,40 @@ p.featured-paragraph {
   }
 
   .hero-content > h1 {
-    font-size: 75px;
+    font-size: 60px;
+  }
+
+  .hero-content > button,
+  .hero-content > button:hover {
+    font-size: 14px;
+    height: auto;
+  }
+  .hero-section {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .inner-awards {
+    padding-bottom: 100px;
+  }
+
+  .inner-awards > h3 {
+    font-size: 45px;
+  }
+
+  .inner-awards > button,
+  .inner-awards > button:hover {
+    font-size: 14px;
+    height: auto;
+    width: 250px;
+  }
+
+  .services-titles {
+    padding: 0px 30px;
+    padding-top: 50px;
+  }
+
+  .services-titles > h4 {
+    font-size: 45px;
   }
 
   .service-boxes {
@@ -1278,6 +1315,24 @@ p.featured-paragraph {
     padding-bottom: 25px;
   }
 
+  .service-boxes:last-child > p {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .service-boxes:last-child {
+    padding-bottom: 0;
+  }
+
+  .read-about-services {
+    padding-bottom: 60px;
+  }
+  .read-about-services > button,
+  .read-about-services > button:hover {
+    width: 250px;
+    font-size: 14px;
+    height: auto;
+  }
+
   .product-boxes {
     width: 100%;
     height: auto;
@@ -1292,9 +1347,12 @@ p.featured-paragraph {
   }
 
   .products-titles > h4 {
-    font-size: 50px;
+    font-size: 40px;
     padding: 30px 0;
     color: rgba(255, 255, 255, 0.63);
+  }
+  .products-titles > p {
+    font-size: 22px;
   }
 
   .products::after,
@@ -1302,10 +1360,33 @@ p.featured-paragraph {
     display: none;
   }
 
+  .feedbacks {
+    padding: 30px 0;
+  }
+
+  .feedbacks::after {
+    display: none;
+  }
+  .feedbacks > button,
+  .feedbacks > button:hover {
+    width: 250px;
+    font-size: 14px;
+    height: auto;
+    margin: 0;
+  }
+  .feedback_titles > h4 {
+    padding-top: 25px;
+    padding-bottom: 0;
+    font-size: 50px;
+  }
+  .feedback_titles > p {
+    font-size: 22px;
+  }
+
   .month-featured {
     height: auto;
     border-top: 5px solid rgb(190, 147, 89);
-    transform: translate(0, -50px);
+    transform: translate(0, 0);
     background: black;
   }
 
@@ -1333,11 +1414,18 @@ p.featured-paragraph {
   }
 
   .featured-right-content > p {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .featured-right-content > h4 {
     font-size: 45px;
+  }
+
+  .featured-right-content > button,
+  .featured-right-content > button:hover {
+    width: 250px;
+    font-size: 14px;
+    height: auto;
   }
 
   p.featured-paragraph {
@@ -1350,12 +1438,33 @@ p.featured-paragraph {
   .feedback_boxes {
     width: 100%;
     float: left;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .feedback_boxes:nth-child(3) {
     border-bottom: none;
   }
+
+  .index-blog {
+    padding-top: 50px;
+  }
+
+  .index-blog-box {
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .index-blog-box:last-child {
+    padding-bottom: 0;
+  }
+
+  .index-blog-titles > p {
+    font-size: 22px;
+  }
+  .index-blog-titles > h4 {
+    font-size: 45px;
+  }
+
   .footer {
     position: static;
   }
@@ -1396,9 +1505,5 @@ p.featured-paragraph {
   }
   .contact-us-hero > h1 {
     font-size: 70px;
-  }
-
-  .hero-section {
-    height: auto;
   }
 }
